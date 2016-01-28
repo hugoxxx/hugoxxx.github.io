@@ -10,14 +10,14 @@ p{
 }
 a{
 	color: #05b2f6;
-	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 
-	-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 }
 a:hover{
@@ -135,11 +135,11 @@ p, h1, h2, h3, h4, a{
 
 .row .md-8{
 	width: 58.37%;
-	float:left;	
+	float:left;
 }
 .row .md-9{
 	width: 66.7%;
-	float:left;	
+	float:left;
 }
 
 
@@ -160,36 +160,36 @@ header{
 	position: fixed;
 	top: 0;
 	z-index: 1000;
-	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 
-	-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 }
 .minilogoon{
 
 	display: block;
-	-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 }
 #minilogo{
 	display: none;
-	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 }
 .minilogooff{
 	display: none;
-	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	-o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 }
 header ul{
@@ -203,7 +203,7 @@ header ul li{
 	line-height: 42px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: #666;		
+	color: #666;
 }
 .menuicon{
 	font-size: 20px !important;
@@ -265,7 +265,7 @@ margin: 20px auto;
 	width: 40px;
 	height: 40px;
 	float: left;
-	margin: 13px 10px 0px 0px; 
+	margin: 13px 10px 0px 0px;
 }
 .social li img{
 	width: 100%;
@@ -439,12 +439,12 @@ margin: 20px auto;
 .casulobg{
 	background-image: url(../images/casulo.gif);
 	background-size: cover;
-	background-position: center; 
+	background-position: center;
 }
 .casulo{
 	width: 100%;
 	height: 300px;
-	background-color: rgba(5,178,246,.8);	
+	background-color: rgba(5,178,246,.8);
 	padding: 85px 100px;
 }
 .casulo h1{
@@ -520,18 +520,17 @@ margin: 20px auto;
 	border-radius: 3px;
 	width: 24%;
 	margin: .5%;
-	height: 298px;
 	float: left;
 }
 .tecnobg{
 	background-image: url(../images/bgtec.gif);
 	background-size: cover;
-	background-position: center; 
+	background-position: center;
 	margin: 0px 0px;
 }
 .tecno{
 	width: 100%;
-	background-color: rgba(5,178,246,.95);	
+	background-color: rgba(5,178,246,.95);
 	padding: 85px 100px;
 }
 .tecno h1{
@@ -565,12 +564,12 @@ margin: 20px auto;
 .publicbg{
 	background-image: url(../images/bgpublic.gif);
 	background-size: cover;
-	background-position: center; 
+	background-position: center;
 	margin: 0px 0px;
 }
 .public{
 	width: 100%;
-	background-color: rgba(4,147,215,.95);	
+	background-color: rgba(4,147,215,.95);
 	padding: 85px 100px;
 }
 .public h1{
