@@ -113,7 +113,34 @@ p, h1, h2, h3, h4, a{
 
 
 
+/*GRID*/
 
+.row{
+	width: 100%;
+}
+.row .md-1{
+	width: 8.33%;
+	float:left;
+	display: list-item;
+}
+
+.row .md-3{
+	width: 33.3%;
+	float:left;
+}
+.row .md-6{
+	width: 50%;
+	float: left;
+}
+
+.row .md-8{
+	width: 58.37%;
+	float:left;	
+}
+.row .md-9{
+	width: 66.7%;
+	float:left;	
+}
 
 
 
@@ -572,4 +599,110 @@ margin: 20px auto;
 	display: inline-block;
 	color:#fff;
 
+}
+
+
+
+
+
+
+
+
+
+
+/*PORTFOLIO PAGE*/
+.portheader{
+	position: inherit !important;
+}
+
+.portheader #minilogo {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+}
+nav{
+	height: 75px;
+	padding: 15px 50px;
+}
+nav p{
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #BDBDBD;
+}
+
+nav i{
+	margin: 0px 0px;
+}
+nav div:nth-child(1) i{
+	margin: 0px 10px 0px 0px;
+}
+nav div:nth-child(2) i{
+	margin: 0px 0px 0px 10px;
+}
+nav i:before{
+	font-size: 0.8em !important;
+	font-weight: 100;
+}
+nav div:nth-child(1){
+	text-align: left;
+}
+nav div:nth-child(2){
+	text-align: right;
+}
+nav div:hover i:before{
+	color:#05b2f6;
+}
+nav div:hover p{
+	color:#212121;
+}
+#portcontent{
+	padding: 0px 50px;
+}
+.bxslider img{
+	max-width: 100%;
+	min-width: 100%;
+	height: auto;
+}
+
+.outside{
+    position: relative;
+    top: -65px;
+    text-align: center;
+    right: 20px;
+    background-color: #212121;
+    color: #fff;
+    display: block;
+    margin: 0px 0px 0px auto;
+    width: 80px;
+    padding: 10px 0px;
+    border-radius: 3px;
+}
+.bx-controls{
+	position: relative;
+    width: 98%;
+    margin-top: -50px;
+}
+#portcontent h1{
+	text-transform: uppercase;
+	font-size: 3em;
+	letter-spacing: 1px;
+	padding: 0px 10px;
+}
+.tags{
+	width: 100%;
+	padding: 10px 10px;
+}
+.tags span{
+	background-color: #05b2f6;
+	padding: 3px 10px;
+	border-radius: 3px;
+	margin: 0px 5px 0px 0px;
+	font-size: .65em;
+	letter-spacing: 1px;
+	color: #fff;
+}
+#portcontent p{
+	padding: 0px 10px;
 }
