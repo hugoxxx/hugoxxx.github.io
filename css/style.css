@@ -24,7 +24,7 @@ a:hover{
 	color:#666;
 }
 p, h1, h2, h3, h4, a{
-		text-shadow: 0px 1px 1px rgba(0,0,0,.1);
+	text-shadow: 0px 1px 1px rgba(0,0,0,.1);
 }
 .subtitulo{
 	font-size: 40px;
@@ -113,34 +113,6 @@ p, h1, h2, h3, h4, a{
 
 
 
-/*GRID*/
-
-.row{
-	width: 100%;
-}
-.row .md-1{
-	width: 8.33%;
-	float:left;
-	display: list-item;
-}
-
-.row .md-3{
-	width: 33.3%;
-	float:left;
-}
-.row .md-6{
-	width: 50%;
-	float: left;
-}
-
-.row .md-8{
-	width: 58.37%;
-	float:left;
-}
-.row .md-9{
-	width: 66.7%;
-	float:left;
-}
 
 
 
@@ -615,12 +587,11 @@ margin: 20px auto;
 }
 
 .portheader #minilogo {
-    display: inline-block;
-    height: 100%;
-    width: auto;
+	display: inline-block;
+	height: 100%;
+	width: auto;
 }
 nav{
-	height: 75px;
 	padding: 15px 50px;
 }
 nav p{
@@ -666,22 +637,22 @@ nav div:hover p{
 }
 
 .outside{
-    position: relative;
-    top: -65px;
-    text-align: center;
-    right: 20px;
-    background-color: #212121;
-    color: #fff;
-    display: block;
-    margin: 0px 0px 0px auto;
-    width: 80px;
-    padding: 10px 0px;
-    border-radius: 3px;
+	position: relative;
+	top: -5px;
+	text-align: center;
+	right: 20px;
+	background-color: #212121;
+	color: #fff;
+	display: block;
+	margin: 0px 0px 0px auto;
+	width: 80px;
+	padding: 10px 0px;
+	border-radius: 3px;
 }
 .bx-controls{
 	position: relative;
-    width: 98%;
-    margin-top: -50px;
+	width: 98%;
+	margin-top: -50px;
 }
 #portcontent h1{
 	text-transform: uppercase;
@@ -704,4 +675,16 @@ nav div:hover p{
 }
 #portcontent p{
 	padding: 0px 10px;
+}
+.maisfolio{
+	padding: 0px 50px;
+}
+.maisfolio .column{
+	background-color: #000;
+	padding:15px;
+}
+.maisfolio h1{
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
