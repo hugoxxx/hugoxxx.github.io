@@ -14,7 +14,7 @@
 	<title>Hoogo Design</title>
 </head>
 
-<body id="home">
+<body id="home" class="loading">
 
 	<header class="header">
 		<img id="minilogo" class="minilogooffx" src="images/minilogo.png" alt="Hoogo Design">
@@ -287,14 +287,10 @@
             	});
             }
         });
-	$('a').click(function(){
-		$('html, body').animate({
-			scrollTop: $( $(this).attr('href') ).offset().top
-		}, 500);
-		return false;
-	});
+
 </script>
 
+<script src="js/imagesloaded.js"></script>
 <script src="js/skrollr.js"></script>
 <script src="js/_main.js"></script>
 </html>
