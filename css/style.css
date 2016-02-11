@@ -9,7 +9,6 @@ p{
 	line-height: 20px;
 }
 a{
-	color: #05b2f6;
 	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	-moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	-o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
@@ -19,9 +18,6 @@ a{
 	-moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	-o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
-}
-a:hover{
-	color:#666;
 }
 p, h1, h2, h3, h4, a{
 	text-shadow: 0px 1px 1px rgba(0,0,0,.1);
@@ -143,7 +139,6 @@ header{
 	transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 }
 .minilogoon{
-
 	display: block;
 	-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	-moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
@@ -177,13 +172,20 @@ header ul li{
 	text-transform: uppercase;
 	color: #666;
 }
+.menu a{
+	color: #fff;
+
+}
+.menu a:hover{
+	color: #666;
+
+}
 .menuicon{
 	font-size: 20px !important;
 	line-height: 40px !important;
 }
 .topheader{
 	background-color: #fff;
-
 }
 
 
@@ -197,12 +199,6 @@ header ul li{
 
 /*INDEX*/
 
-.fakespace{
-	max-width: 100%;
-	background-image: url(../images/bgcrystal.png);
-	background-size: cover;
-	background-position: center;
-}
 
 .section1{
 	min-height: 200px;
@@ -243,7 +239,11 @@ margin: 20px auto;
 	width: 100%;
 }
 
-
+.contato{
+	width: 100%;
+	min-height: 475px;
+	display: block;
+}
 
 
 
@@ -270,7 +270,7 @@ margin: 20px auto;
 
 
 .port {
-	padding: 20px 20px 100px 20px;
+	padding: 0px 20px 0px 20px;
 	max-width: 1300px;
 	margin: 0 auto;
 	list-style: none;
@@ -313,7 +313,7 @@ margin: 20px auto;
 }
 
 .port figcaption span:before {
-	content: 'by ';
+	content: '>>';
 }
 
 .port figcaption a {
@@ -427,52 +427,44 @@ margin: 20px auto;
 	font-weight: 500;
 }
 .casulo h2{
-	background-color: #fff;
-	padding: 15px;
-	font-size: 20px;
-	line-height: 24px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 400;
-	display: inline-block;
-	border-radius: 3px;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: inline-block;
+    border-radius: 3px;
+}
+.casulo .hsContent{
+	text-align: left !important;
 }
 .section2{
 	min-height: 200px;
 	padding: 40px 100px;
 	margin-bottom: 40px;
 }
-.section2 ul{
-
+.section2 .row{
+	margin-bottom: 10px;
 }
-.section2 ul li{
-	background-color: #fff;
-	padding: 20px;
-	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-	border-radius: 3px;
-	width: 24%;
-	margin: .5%;
-	height: 298px;
+.section2 .row h1{
+	font-size: 1.2em;
+	float: left;
+	margin-top: 26	px;
+	margin-left: 10px;
+	line-height: 22px;
+}
+.section2 p{
+	text-align: justify;
+}
+.section2 img{
+	max-width: 80px;
 	float: left;
 }
 
-.section2 ul li img{
-	display: block;
-	margin: 0px auto;
-	text-align: center;
-}
-.section2 ul li h1{
-	font-size: 18px;
-	text-align: center;
-	letter-spacing: 1px;
-	padding: 5px;
-	color: #05b2f6;
-}
-.section2 ul li p i{
-	margin-left: 5px;
-	font-size: 14px;
-}
 .section3{
+	max-width: 100%;
 	background-color: #222;
 	min-height: 200px;
 	padding: 40px 100px;
@@ -544,6 +536,22 @@ margin: 20px auto;
 	background-color: rgba(4,147,215,.95);
 	padding: 85px 100px;
 }
+.public h2{
+    background-color: #fff;
+    padding: 15px;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: inline-block;
+    border-radius: 3px;
+}
+.public .hsContent{
+	text-align: left !important;
+}
+
+
 .public h1{
 	font-size: 40px;
 	text-transform: uppercase;
@@ -551,24 +559,15 @@ margin: 20px auto;
 	color: #fff;
 	font-weight: 500;
 }
-.public h2{
-	background-color: #fff;
-	padding: 15px;
-	font-size: 20px;
-	line-height: 24px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 400;
-	display: inline-block;
-	border-radius: 3px;
-}
 .public p{
 	padding: 15px 0px;
 	line-height: 24px;
 	letter-spacing: 1px;
 	font-weight: 400;
+	text-align: justify;
 	display: inline-block;
-	color:#fff;
+	color:#333333 !important;
+	width: 450px !important;
 
 }
 
@@ -582,109 +581,373 @@ margin: 20px auto;
 
 
 /*PORTFOLIO PAGE*/
-.portheader{
-	position: inherit !important;
+.portview{
+    background-color: #fff;
+    max-width: 90%;
+    margin: -125px auto 0;
+    padding: 0px;
 }
-
-.portheader #minilogo {
-	display: inline-block;
-	height: 100%;
-	width: auto;
-}
-nav{
-	padding: 15px 50px;
-}
-nav p{
-	font-size: 0.8em;
-	letter-spacing: 1px;
-	font-weight: 400;
-	text-transform: uppercase;
-	color: #BDBDBD;
-}
-
-nav i{
-	margin: 0px 0px;
-}
-nav div:nth-child(1) i{
-	margin: 0px 10px 0px 0px;
-}
-nav div:nth-child(2) i{
-	margin: 0px 0px 0px 10px;
-}
-nav i:before{
-	font-size: 0.8em !important;
-	font-weight: 100;
-}
-nav div:nth-child(1){
-	text-align: left;
-}
-nav div:nth-child(2){
-	text-align: right;
-}
-nav div:hover i:before{
-	color:#05b2f6;
-}
-nav div:hover p{
-	color:#212121;
-}
-#portcontent{
-	padding: 0px 50px;
-}
-.bxslider img{
-	max-width: 100%;
-	min-width: 100%;
+.portview img{
+	max-width: 100% !important;
 	height: auto;
 }
+.maisport{
+    background-color: #fff;
+    max-width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+}
+.maisport .row img{
+	max-width: 100%;
+	height: auto;
+}
+.fixheader{
+	position: absolute;
 
-.outside{
-	position: relative;
-	top: -5px;
-	text-align: center;
-	right: 20px;
-	background-color: #212121;
-	color: #fff;
+}
+.fixheader img{
+	display: block !important;
+	width: auto;
+	height: 100%;
+	float: left;
+}
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+hr {
 	display: block;
-	margin: 0px 0px 0px auto;
-	width: 80px;
-	padding: 10px 0px;
-	border-radius: 3px;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
-.bx-controls{
-	position: relative;
-	width: 98%;
-	margin-top: -50px;
+
+img {
+	vertical-align: middle;
 }
-#portcontent h1{
-	text-transform: uppercase;
-	font-size: 3em;
-	letter-spacing: 1px;
-	padding: 0px 10px;
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
-.tags{
+
+textarea {
+	resize: vertical;
+}
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+
+.no-js {
+	padding-top: 106px;
+}
+h2 {
+	margin-top: 0;
+}
+.loading {
+	background: url('../images/ico_loading.gif') no-repeat center center;
+}
+section {
+	min-width: 960px;
+	opacity: 0;
+}
+.loaded section,
+.no-js section {
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
+}
+main {
+	overflow-x: hidden;
+}
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
 	width: 100%;
-	padding: 10px 10px;
 }
-.tags span{
-	background-color: #05b2f6;
-	padding: 3px 10px;
-	border-radius: 3px;
-	margin: 0px 5px 0px 0px;
-	font-size: .65em;
-	letter-spacing: 1px;
-	color: #fff;
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('../images/bcg_slide-1.jpg')}
+
+/* Slide 2 */
+#slide-2 .bcg {
+	background: none; 
+	min-height: 310px; 
+	text-align: center; 
+	width: 90%;
+	margin: -155px auto 0px;
 }
-#portcontent p{
-	padding: 0px 10px;
+
+/* Slide 3 */
+#slide-3 .bcg {
+	background: none; 
+	min-height: 310px; 
+	text-align: center; 
+	width: 90%;
+	margin: -155px auto 0px;
 }
-.maisfolio{
-	padding: 0px 50px;
+
+.hsContainer {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
 }
-.maisfolio .column{
-	background-color: #000;
-	padding:15px;
+
+.hsContent {
+	max-width: 450px;
+	margin: -150px auto 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	color: #ebebeb;
+	padding: 0;
+	text-align: center
 }
-.maisfolio h1{
-	font-weight: 300;
+#slide-1 h2{
+	margin: -150px auto 30px;
 	text-transform: uppercase;
-	letter-spacing: 1px;
 }
+#slide-1 p{
+}
+#slide-1 span{
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 3px;
+	font-weight: 100;
+}
+.hsContent h2,
+.copy h2 {
+	color: #232323;
+	font-size: 45px;
+	line-height: 48px;
+	margin-bottom: 12px;
+}
+.hsContent p {
+	width: 400px;
+	margin: 0 auto;
+	color: #000;
+}
+.hsContent a {
+	color: #b2b2b2;
+	text-decoration: underline;
+}
+.bgBlack {
+	background-color: rgba(0,0,0,0.75);
+	padding: 3px 10px;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+ .ir {
+ 	background-color: transparent;
+ 	border: 0;
+ 	overflow: hidden;
+ 	/* IE 6/7 fallback */
+ 	*text-indent: -9999px;
+ }
+
+ .ir:before {
+ 	content: "";
+ 	display: block;
+ 	width: 0;
+ 	height: 150%;
+ }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+ .hidden {
+ 	display: none !important;
+ 	visibility: hidden;
+ }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+ .visuallyhidden {
+ 	border: 0;
+ 	clip: rect(0 0 0 0);
+ 	height: 1px;
+ 	margin: -1px;
+ 	overflow: hidden;
+ 	padding: 0;
+ 	position: absolute;
+ 	width: 1px;
+ }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
+ 	clip: auto;
+ 	height: auto;
+ 	margin: 0;
+ 	overflow: visible;
+ 	position: static;
+ 	width: auto;
+ }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+ .invisible {
+ 	visibility: hidden;
+ }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+ .clearfix:before,
+ .clearfix:after {
+ 	content: " "; /* 1 */
+ 	display: table; /* 2 */
+ }
+
+ .clearfix:after {
+ 	clear: both;
+ }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+ .clearfix {
+ 	*zoom: 1;
+ }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+   	/* Style adjustments for viewports that meet the condition */
+   }
+
+   @media print,
+   (-o-min-device-pixel-ratio: 5/4),
+   (-webkit-min-device-pixel-ratio: 1.25),
+   (min-resolution: 120dpi) {
+   	/* Style adjustments for high resolution devices */
+   }
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+   @media print {
+   	* {
+   		background: transparent !important;
+   		color: #000 !important; /* Black prints faster: h5bp.com/s */
+   		box-shadow: none !important;
+   		text-shadow: none !important;
+   	}
+
+   	a,
+   	a:visited {
+   		text-decoration: underline;
+   	}
+
+   	a[href]:after {
+   		content: " (" attr(href) ")";
+   	}
+
+   	abbr[title]:after {
+   		content: " (" attr(title) ")";
+   	}
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+     .ir a:after,
+     a[href^="javascript:"]:after,
+     a[href^="#"]:after {
+     	content: "";
+     }
+
+     pre,
+     blockquote {
+     	border: 1px solid #999;
+     	page-break-inside: avoid;
+     }
+
+     thead {
+     	display: table-header-group; /* h5bp.com/t */
+     }
+
+     tr,
+     img {
+     	page-break-inside: avoid;
+     }
+
+     img {
+     	max-width: 100% !important;
+     }
+
+     @page {
+     	margin: 0.5cm;
+     }
+
+     p,
+     h2,
+     h3 {
+     	orphans: 3;
+     	widows: 3;
+     }
+
+     h2,
+     h3 {
+     	page-break-after: avoid;
+     }
+ }
