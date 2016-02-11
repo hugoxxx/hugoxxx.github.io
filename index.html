@@ -15,6 +15,7 @@
 </head>
 
 <body id="home" class="loading">
+	<div id="popup">Site em manutenção - Desculpe o transtorno</div>
 
 	<header class="header">
 		<img id="minilogo" class="minilogooffx" src="images/minilogo.png" alt="Hoogo Design">
@@ -273,6 +274,9 @@
             	$('.menu a').css({
             		'color' : '#fff'
             	});
+            	$('#popup').css({
+            		'position' : 'fixed'
+            	});
             } else {
             	$('#minilogo').css({
             		'display' : 'block',
@@ -283,6 +287,9 @@
             	});
             	$('.menu a').css({
             		'color' : '#0493d7',
+            	});
+            	$('#popup').css({
+            		'position' : 'absolute'
             	});
             }
         });
