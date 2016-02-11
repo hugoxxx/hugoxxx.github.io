@@ -61,7 +61,14 @@
 		<div style="clear:both"></div>
 	</div>  
 </body>
-
+<script>
+	$('a').click(function(){
+		$('html, body').animate({
+			scrollTop: $( $(this).attr('href') ).offset().top
+		}, 500);
+		return false;
+	});
+</script>
 <script src="js/imagesloaded.js"></script>
 <script src="js/skrollr.js"></script>
 <script src="js/loading.js"></script>
