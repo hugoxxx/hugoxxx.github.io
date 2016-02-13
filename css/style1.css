@@ -3,6 +3,7 @@
 body{
 	background-color: #e6e6e6;
 	font-family: 'Roboto', sans-serif;
+	overflow-y: scroll !important;
 }
 h1{
 	font-size: 24px;
@@ -458,14 +459,14 @@ margin: 20px auto;
 		display: block;
 	}
 	.mycont{
-		    width: 100%;
-    height: 510px;
-    background-image: url("../images/envelope.png");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 10px;
-    padding: 20px;
+		width: 100%;
+		height: 510px;
+		background-image: url("../images/envelope.png");
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin-top: 10px;
+		padding: 20px;
 	}
 	.mycont p{
 		color: #333;
@@ -486,7 +487,7 @@ margin: 20px auto;
 		height: 159px;
 	}
 	.contato button{
-				font-family: 'Roboto';
+		font-family: 'Roboto';
 
 		position: relative;
 		z-index: 1;
@@ -506,8 +507,8 @@ margin: 20px auto;
 		border-radius: 3px; 
 	}
 	.contato button:hover{
-	background-color: #222
-}
+		background-color: #222
+	}
 	.input {
 		position: relative;
 		z-index: 1;
@@ -515,7 +516,7 @@ margin: 20px auto;
 		margin: .75em;
 		width: 100%;
 		vertical-align: top;
-				font-family: 'Roboto';
+		font-family: 'Roboto';
 
 	}
 
@@ -768,63 +769,63 @@ margin: 20px auto;
 
 
 
-   @media only screen and (max-width: 35em) {
-   	/* Style adjustments for viewports that meet the condition */
-   
-   .menu{
-   	display: none;
-   }
-   .logo {
-    max-width: 80%;
-}
-.sectionme {
-	    padding: 40px 10px;
+	@media only screen and (max-width: 35em) {
+		/* Style adjustments for viewports that meet the condition */
+		
+		.menu{
+			display: none;
+		}
+		.logo {
+			max-width: 80%;
+		}
+		.sectionme {
+			padding: 40px 10px;
+		}
+		.metext p {
+			line-height: 28px;
+			text-align: left;
+			font-size: 1.2em;
+		}
+		.social li {
+			width: 11%;
+			float: left;
+			margin: 13px 5px 0px 0px;
+		}
+		header{
+			padding: 15px 10px;
+		}
+		.casulo, .public{
+			padding: 85px 10px;
+		}
+		.casulo h1, .public h1 {
+			font-size: 35px;
+		}
+		.section2, .section3, .sectioncontato{
+			padding: 40px 10px;
+		}
+		.subsubtitulo {
+			font-size: 15px;
+		}
+		.port {
+			padding: 0px 0px;
+		}
+		.port figure img {
+			min-width: 100%;
+		}
+		.public p {
+			font-size: 13px;
+		}
+		.public h2{
+			text-align: center;
+		}
+		.mycont {
+			padding: 0px;
+			height: 330px;
+		}
+		.input{
+			margin: .75em 0px;
+		}
+		.row{
+			margin:0px;
+		}
 	}
-	.metext p {
-    line-height: 28px;
-    text-align: left;
-    font-size: 1.2em;
-}
-.social li {
-    width: 11%;
-    float: left;
-    margin: 13px 5px 0px 0px;
-    }
-    header{
-    	    padding: 15px 10px;
-    }
-    .casulo, .public{
-    	padding: 85px 10px;
-    }
-    .casulo h1, .public h1 {
-    font-size: 35px;
-}
-.section2, .section3, .sectioncontato{
-	padding: 40px 10px;
-   }
-   .subsubtitulo {
-    font-size: 15px;
-}
-.port {
-    padding: 0px 0px;
-}
-.port figure img {
-    min-width: 100%;
-    }
-    .public p {
-    font-size: 13px;
-}
-.public h2{
-	    text-align: center;
-}
-.mycont {
-	padding: 0px;
-	    height: 330px;
-}
-.input{
-	    margin: .75em 0px;
-}
-.row{
-	margin:0px;
-}
-}
