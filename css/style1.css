@@ -760,3 +760,71 @@ margin: 20px auto;
 		max-width: 100%;
 		height: auto;
 	}
+
+
+
+
+
+
+
+
+   @media only screen and (max-width: 35em) {
+   	/* Style adjustments for viewports that meet the condition */
+   
+   .menu{
+   	display: none;
+   }
+   .logo {
+    max-width: 80%;
+}
+.sectionme {
+	    padding: 40px 10px;
+	}
+	.metext p {
+    line-height: 28px;
+    text-align: left;
+    font-size: 1.2em;
+}
+.social li {
+    width: 11%;
+    float: left;
+    margin: 13px 5px 0px 0px;
+    }
+    header{
+    	    padding: 15px 10px;
+    }
+    .casulo, .public{
+    	padding: 85px 10px;
+    }
+    .casulo h1, .public h1 {
+    font-size: 35px;
+}
+.section2, .section3, .sectioncontato{
+	padding: 40px 10px;
+   }
+   .subsubtitulo {
+    font-size: 15px;
+}
+.port {
+    padding: 0px 0px;
+}
+.port figure img {
+    min-width: 100%;
+    }
+    .public p {
+    font-size: 13px;
+}
+.public h2{
+	    text-align: center;
+}
+.mycont {
+	padding: 0px;
+	    height: 330px;
+}
+.input{
+	    margin: .75em 0px;
+}
+.row{
+	margin:0px;
+}
+}
