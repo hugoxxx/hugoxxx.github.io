@@ -692,7 +692,7 @@ margin: 20px auto;
 		text-align: center;
 		display: block;
 		padding-top: 14px;
-		color: #4b4b4b;
+		color:  rgba(32,32,32,.15);
 		width: 100px;
 		margin: 0px auto;
 		font-size: 18px;
@@ -701,16 +701,13 @@ margin: 20px auto;
 		text-align: center;
 		display: block;
 		padding-top: 14px;
-		color: #e6e6e6;
+		color: rgba(200,200,200,.15);
 		width: 100px;
 		margin: 0px auto;
 		font-size: 18px;
 	}
-	.tt1 i:hover{
-		color:#05b2f6;
-	}
-	#contato i:hover{
-		color: #4b4b4b;
+	.tt1 i{
+		color: rgba(5,178,246,1);
 	}
 	.tt2 i, .tt3 i, #contato i{
 		font-size: 40px !important;
@@ -754,13 +751,12 @@ margin: 20px auto;
 		max-width: 90%;
 		margin: 25px auto;
 		padding: 20px;
+		box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 	}
 	.maisport .row img{
 		max-width: 100%;
 		height: auto;
 	}
-
-
 
 
 
@@ -805,8 +801,9 @@ margin: 20px auto;
 			font-size: 1.2em !important;
 			line-height: 1.4em;
 		}
-		.subsubtitulo {
+		.subtitulo {
 			font-size: 15px;
+			font-weight: 400;
 		}
 		.port {
 			padding: 0px 0px;
@@ -846,15 +843,18 @@ margin: 20px auto;
 			margin:0px;
 			margin-bottom: 0px !important; 	
 		}
-		#slide-1 span {
+		#port #slide-1 span {
 			display: block;
 			text-align: center;
 			font-weight: 700;
+			letter-spacing: 0px;
 		}
-		#slide-1 h2{
+		#port #slide-1 h2{
 			text-align: left;
 			font-size: .8em;
 			font-weight: 400;
 			letter-spacing: 1px;
+		}
+		.maisport {
 		}
 	}
