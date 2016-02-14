@@ -844,5 +844,17 @@ margin: 20px auto;
 		}
 		.row{
 			margin:0px;
+			margin-bottom: 0px !important; 	
+		}
+		#slide-1 span {
+			display: block;
+			text-align: center;
+			font-weight: 700;
+		}
+		#slide-1 h2{
+			text-align: left;
+			font-size: .8em;
+			font-weight: 400;
+			letter-spacing: 1px;
 		}
 	}
