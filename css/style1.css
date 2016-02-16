@@ -1,9 +1,10 @@
 /* ----------------- PADROES ----------------- */
-
+html{
+	overflow-y: scroll !important;	
+}
 body{
 	background-color: #e6e6e6;
 	font-family: 'Roboto', sans-serif;
-	overflow-y: scroll !important;
 }
 h1{
 	font-size: 24px;
@@ -784,7 +785,7 @@ margin: 20px auto;
 
 	@media only screen and (max-width: 35em) {
 		/* Style adjustments for viewports that meet the condition */
-		body{
+		html{
 			overflow-y: scroll; 
 		}
 		.menu{
