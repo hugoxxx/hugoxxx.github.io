@@ -1,5 +1,4 @@
 /* ----------------- PADROES ----------------- */
-html, body {min-height:100%; height:100%; overflow-x:hidden; display:block;}
 body{
 	background-color: #e6e6e6;
 	font-family: 'Roboto', sans-serif;
@@ -780,12 +779,13 @@ margin: 20px auto;
 
 
 
+/*----------------------- MOBILE VIEW -----------------------*/
+
+
+
 
 	@media only screen and (max-width: 35em) {
 		/* Style adjustments for viewports that meet the condition */
-		html{
-			overflow-y: scroll; 
-		}
 		.menu{
 			display: none;
 		}
