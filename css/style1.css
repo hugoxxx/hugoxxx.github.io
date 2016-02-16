@@ -1,7 +1,5 @@
 /* ----------------- PADROES ----------------- */
-html{
-	overflow-y: scroll !important;	
-}
+html, body {min-height:100%; height:100%; overflow-x:hidden; display:block;}
 body{
 	background-color: #e6e6e6;
 	font-family: 'Roboto', sans-serif;
