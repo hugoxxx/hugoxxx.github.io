@@ -692,7 +692,7 @@ margin: 20px auto;
 		text-align: center;
 		display: block;
 		padding-top: 14px;
-		color:  rgba(32,32,32,.15);
+		color:  rgba(32,32,32,.1);
 		width: 100px;
 		margin: 0px auto;
 		font-size: 18px;
@@ -701,13 +701,16 @@ margin: 20px auto;
 		text-align: center;
 		display: block;
 		padding-top: 14px;
-		color: rgba(200,200,200,.15);
+		color: rgba(200,200,200,.1);
 		width: 100px;
 		margin: 0px auto;
 		font-size: 18px;
 	}
-	.tt1 i{
-		color: rgba(5,178,246,1);
+	.tt1 i:hover{
+		color:#05b2f6;
+	}
+	#contato i:hover{
+		color: #4b4b4b;
 	}
 	.tt2 i, .tt3 i, #contato i{
 		font-size: 40px !important;
@@ -757,7 +760,23 @@ margin: 20px auto;
 		max-width: 100%;
 		height: auto;
 	}
-
+	.ciarabt{
+		background-color: #fd0063;
+		border-radius: 50px;
+		margin:40px auto 80px;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 30px;
+		width: 300px;
+		box-shadow: 0px 0px 0px transparent;
+		border: 0px;
+		font-size: 1.2em;
+		letter-spacing: 2px;
+	}
+	.ciarabt:hover{
+		background-color: #333;
+		color: #fd0063;
+	}
 
 
 
@@ -802,8 +821,10 @@ margin: 20px auto;
 			line-height: 1.4em;
 		}
 		.subtitulo {
-			font-size: 15px;
+			font-size: 23px;
 			font-weight: 400;
+			margin-bottom: 50px;
+
 		}
 		.port {
 			padding: 0px 0px;
