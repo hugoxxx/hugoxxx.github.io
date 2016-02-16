@@ -779,13 +779,17 @@ margin: 20px auto;
 
 
 
-/*----------------------- MOBILE VIEW -----------------------*/
+	/*----------------------- MOBILE VIEW -----------------------*/
 
 
 
 
 	@media only screen and (max-width: 35em) {
 		/* Style adjustments for viewports that meet the condition */
+		body{
+			overflow-y: scroll;
+			-webkit-overflow-scrolling: touch;
+		}
 		.menu{
 			display: none;
 		}
