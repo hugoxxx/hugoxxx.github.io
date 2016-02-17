@@ -193,16 +193,8 @@ margin: 20px auto;
 
 /*CASULO*/
 
-.casulobg{
-	background-image: url(../images/casulo.gif);
-	background-size: cover;
-	background-position: center;
-}
 .casulo{
-	width: 100%;
-	min-height: 300px;
-	background-color: rgba(5,178,246,.8);
-	padding: 85px 100px;
+
 }
 .casulo h1{
 	font-size: 40px;
@@ -397,26 +389,23 @@ margin: 20px auto;
 	/*PUBLICIDADE*/
 
 	.publicbg{
-		background-image: url(../images/bgpublic.gif);
-		background-size: cover;
-		background-position: center;
 		margin: 0px 0px;
 	}
 	.public{
-		width: 100%;
-		background-color: rgba(4,147,215,.95);
-		padding: 85px 100px;
+		width:100%;
+		text-align:left;	
 	}
 	.public h2{
-		background-color: #fff;
-		padding: 15px;
-		font-size: 20px !important;
-		line-height: 24px !important;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-weight: 400;
-		display: inline-block;
-		border-radius: 3px;
+		max-width:100%;
+	background-color: #fff;
+	padding: 15px;
+	font-size: 20px !important;
+	line-height: 24px !important;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	display: inline-block;
+	border-radius: 3px;
 	}
 	.public .hsContent{
 		text-align: left !important;
@@ -810,9 +799,7 @@ margin: 20px auto;
 		header{
 			padding: 15px 10px;
 		}
-		.casulo, .public{
-			padding: 85px 10px;
-		}
+
 		.casulo h1, .public h1 {
 			font-size: 35px;
 		}

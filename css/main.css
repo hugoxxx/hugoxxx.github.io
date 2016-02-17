@@ -1,8 +1,36 @@
-html,
-button,
-input,
-select,
-textarea {
+/* 
+ _____   _           _         _                        _                  
+|_   _| | |         | |       | |                      | |                 
+  | |   | |__   __ _| |_ ___  | |_ ___  _ __ ___   __ _| |_ ___   ___  ___ 
+  | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
+ _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
+ \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
+
+Oh nice, welcome to the stylesheet of dreams. 
+It has it all. Classes, ID's, comments...the whole lot:)
+Enjoy responsibly!
+@ihatetomatoes
+
+*/
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+
+   html,
+   button,
+   input,
+   select,
+   textarea {
     color: #222;
 }
 
@@ -17,7 +45,7 @@ body {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+ ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -31,7 +59,7 @@ body {
  * A better looking default horizontal rule
  */
 
-hr {
+ hr {
     display: block;
     height: 1px;
     border: 0;
@@ -44,7 +72,7 @@ hr {
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
 
-img {
+ img {
     vertical-align: middle;
 }
 
@@ -52,7 +80,7 @@ img {
  * Remove default fieldset styles.
  */
 
-fieldset {
+ fieldset {
     border: 0;
     margin: 0;
     padding: 0;
@@ -62,7 +90,7 @@ fieldset {
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
+ textarea {
     resize: vertical;
 }
 
@@ -70,7 +98,7 @@ textarea {
    Chrome Frame prompt
    ========================================================================== */
 
-.chromeframe {
+   .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
@@ -81,47 +109,78 @@ textarea {
    Parallax Scroll
    ========================================================================== */
 
-.no-js {
-	padding-top: 106px;
+   .no-js {
+    padding-top: 106px;
 }
 h2 {
-	margin-top: 0;
+    margin-top: 0;
 }
 .loading {
-	background: url('../images/ico_loading.gif') no-repeat center center;
+    background: url('../images/ico_loading.gif') no-repeat center center;
 }
 section {
-	max-width: 100%;
-	opacity: 0;
+    max-width: 100%;
+    opacity: 0;
 }
 .loaded section,
 .no-js section {
-	opacity: 1;
-	-webkit-transition: opacity 300ms ease-out;
-	-moz-transition: opacity 300ms ease-out;
-	transition: opacity 300ms ease-out;
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
 }
 main {
-	overflow-x: hidden;
+    overflow-x: hidden;
     overflow-y: scroll !important;
 }
-
+#preload {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .bcg {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 /* Slide 1 */
 #slide-1 .bcg {background-image:url('../images/bg_home.jpg')}
 
 /* Slide 2 */
-#slide-2 .bcg {background: none; background-color: #010101; height: 310px; text-align: center}
+#slide-2 .bcg {background-image:url('../images/casulo.gif')}
+#slide-2 .hsContainer{
+    background-color: rgba(5,178,246,.8);
+}
+#slide-2 .hsContent {  
+        width: 100%;
+
+        min-height: 300px;
+
+    padding: 85px 100px;
+ }
+#slide-2 h2 {}
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../images/bcg_slide-3.jpg')}
+#slide-3 .bcg {background-image:url('../images/bgpublic.gif')}
+#slide-3 .hsContainer{
+    background-color: rgba(5,178,246,.8);
+}
+#slide-3 .hsContent {  
+        width: 100%;
+
+        min-height: 300px;
+
+    padding: 85px 100px;
+ }
+#slide-3 h2 {
+
+}
 
 
 /* Slide 4 */
@@ -138,44 +197,40 @@ main {
 #slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2}
 
 .hsContainer {
-	display: table;
-	table-layout: fixed;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .hsContent {
-	max-width: 450px;
-	margin: -150px auto 0 auto;
-	display: table-cell;
-	vertical-align: middle;
-	color: #ebebeb;
-	padding: 0 8%;
-	text-align: center
+    max-width: 450px;
+    margin: -150px auto 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ebebeb;
+    padding: 0;
+    text-align: center
 }
-	.hsContent h2,
-	.copy h2 {
-		color: #666;
-		font-size: 45px;
-		line-height: 48px;
-		margin-bottom: 12px;
-	}
-	.hsContent p {
-		width: 400px;
-        max-width: 100%;
-		margin: 0 auto;
-		color: #b2b2b2;
-	}
-	.hsContent a {
-		color: #b2b2b2;
-		text-decoration: underline;
-	}
-	.bgBlack {
-		background-color: rgba(0,0,0,0.75);
-		padding: 3px 10px;
-	}
+.hsContent h2,
+.copy h2 {
+    color: #666;
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 12px;
+}
+.hsContent p {
+ }
+.hsContent a {
+    color: #b2b2b2;
+    text-decoration: underline;
+}
+.bgBlack {
+    background-color: rgba(0,0,0,0.75);
+    padding: 3px 10px;
+}
 
 
 
@@ -191,7 +246,7 @@ main {
  * Image replacement
  */
 
-.ir {
+ .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
@@ -210,7 +265,7 @@ main {
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
-.hidden {
+ .hidden {
     display: none !important;
     visibility: hidden;
 }
@@ -219,7 +274,7 @@ main {
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
 
-.visuallyhidden {
+ .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -235,8 +290,8 @@ main {
  * when navigated to via the keyboard: h5bp.com/p
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -249,7 +304,7 @@ main {
  * Hide visually and from screenreaders, but maintain layout
  */
 
-.invisible {
+ .invisible {
     visibility: hidden;
 }
 
@@ -265,8 +320,8 @@ main {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+ .clearfix:before,
+ .clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
@@ -280,7 +335,7 @@ main {
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {
+ .clearfix {
     *zoom: 1;
 }
 
@@ -290,14 +345,14 @@ main {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -306,7 +361,7 @@ main {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
-@media print {
+   @media print {
     * {
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
@@ -331,9 +386,9 @@ main {
      * Don't show links for images, or javascript/internal links
      */
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+     .ir a:after,
+     a[href^="javascript:"]:after,
+     a[href^="#"]:after {
         content: "";
     }
 
