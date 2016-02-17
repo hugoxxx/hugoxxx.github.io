@@ -773,9 +773,9 @@ margin: 20px auto;
 			padding: 40px 10px;
 		}
 		.metext p {
-			line-height: 30px;
-			text-align: left;
-			font-size: 1.4em;
+			font-size: 1.2em !important;
+			line-height: 1.4em;
+			text-align:left;
 		}
 		.social li {
 			width: 11%;
