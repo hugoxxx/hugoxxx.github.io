@@ -103,6 +103,7 @@ section {
 }
 main {
 	overflow-x: hidden;
+    overflow-y: scroll !important;
 }
 
 .bcg {
