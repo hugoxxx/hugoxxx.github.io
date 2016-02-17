@@ -2,9 +2,8 @@
 body{
 	background-color: #e6e6e6;
 	font-family: 'Roboto', sans-serif;
-	height: 100%;
-	min-height: 100%;
-	
+
+
 }
 h1{
 	font-size: 24px;
@@ -787,7 +786,7 @@ margin: 20px auto;
 
 
 
-	@media only screen and (max-width: 35em) {
+	@media only screen and (max-width: 400px) {
 		/* Style adjustments for viewports that meet the condition */
 		body{
 		}
