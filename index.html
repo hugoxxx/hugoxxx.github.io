@@ -37,8 +37,8 @@
 			data-top-bottom="background-position: 50% -100px;" 
 			data-anchor-target="#slide-1"
 			>
-			<div class="hsContainer fullbcg">
-				<div class="hsContent fullbcg" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
+			<div class="hsContainer ">
+				<div class="hsContent " data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
 					<h2 style="margin-top:0px"><img class="logo" src="images/logo.png"></h2>
 				</div>
 			</div>
@@ -53,7 +53,9 @@
 		</div>
 		<div class="metext">
 			<h1>Seja bem vindo!</h1>
-			<p>Eu me chamo Hugo Rocha e esse é o meu portfólio de trabalho.<br>Com mais de 10 anos de experiencia no mercado, traduzindo diversos projetos e ideias para a realidade.<br>Entrelaçando o pensamento, a forma e o resultado! Sucesso do início ao fim!</p>
+			<p>Eu me chamo Hugo Rocha e esse é o meu portfólio de trabalho.</p>
+			<p>Com mais de 10 anos de experiencia no mercado, traduzindo diversos projetos e ideias para a realidade.</p>
+			<p>Entrelaçando o pensamento, a forma e o resultado! Sucesso do início ao fim!</p>
 			<ul class="social">
 				<li class=""><img src="images/social_be.png" alt=""></li>
 				<li class=""><img src="images/social_pi.png" alt=""></li>
@@ -340,14 +342,13 @@
 			$('.fullbcg').css('min-height', windowHeight);
 		};
 		setHeight();
-		
+
 		$(window).resize(function() {
 			setHeight();
 		});
 	});
 </script>
 <script>
-
 	$(document).scroll(function () {
             //Show element after user scrolls 800px
             var y = $(this).scrollTop();
@@ -371,9 +372,6 @@
             	$('.menu a').css({
             		'color' : '#fff'
             	});
-            	$('#popup').css({
-            		'position' : 'fixed'
-            	});
             } else {
             	$('#minilogo').css({
             		'display' : 'block',
@@ -384,9 +382,6 @@
             	});
             	$('.menu a').css({
             		'color' : '#0493d7',
-            	});
-            	$('#popup').css({
-            		'position' : 'absolute'
             	});
             }
         });
