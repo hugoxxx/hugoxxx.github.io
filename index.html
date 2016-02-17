@@ -20,24 +20,6 @@
 		<img src="images/casulo.gif">
 		<img src="images/bgpublic.gif">
 	</div>
-	<div class="outer-menu">
-		<input class="checkbox-toggle" type="checkbox" />
-		<div class="hamburger">
-			<div></div>
-		</div>
-		<div class="mobimenu">
-			<div>
-				<div>
-					<ul>
-						<li><a class="mobimenuclick" href="#home"><i class="fa fa-home menuicon"></i></a></li>
-						<li><a class="mobimenuclick" href="#servicos">serviços</a></li>
-						<li><a class="mobimenuclick" href="#portfolio">portfólio</a></li>
-						<li><a class="mobimenuclick" href="#contato">contato</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 	<main>
 		<header class="header">
 			<img id="minilogo" class="minilogooffx" src="images/minilogo.png" alt="Hoogo Design">
@@ -352,21 +334,19 @@
 </body>
 <script>
 	$(document).ready(function() {
-		function setHeight() {
-			windowHeight = $(window).innerHeight();
-			$('.fullbcg').css('min-height', windowHeight);
-		};
-		setHeight();
-
-		$(window).resize(function() {
-			setHeight();
-		});
-	});
+  function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $('.fullbcg').css('min-height', windowHeight);
+  };
+  setHeight();
+  
+  $(window).resize(function() {
+    setHeight();
+  });
+});
 </script>
 <script>
-$('.mobimenuclick').click(function() {
-     $('.mobimenu').css('display', 'hidden !important');
- });
+
 	$(document).scroll(function () {
             //Show element after user scrolls 800px
             var y = $(this).scrollTop();
@@ -390,8 +370,8 @@ $('.mobimenuclick').click(function() {
             	$('.menu a').css({
             		'color' : '#fff'
             	});
-            	$('.outer-menu').css({
-            		'top' : '-100px'
+            	$('#popup').css({
+            		'position' : 'fixed'
             	});
             } else {
             	$('#minilogo').css({
@@ -404,8 +384,8 @@ $('.mobimenuclick').click(function() {
             	$('.menu a').css({
             		'color' : '#0493d7',
             	});
-            	$('.outer-menu').css({
-            		'top' : '1.1vh'
+            	$('#popup').css({
+            		'position' : 'absolute'
             	});
             }
         });
