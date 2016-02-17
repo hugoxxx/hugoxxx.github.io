@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="css/style1.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<script src="js/modernizr.custom.js"></script>
 	<title>Hoogo Design</title>
 </head>
 
@@ -345,7 +344,7 @@
             }
         });
 	$('a').click(function(){
-		$('html, body').animate({
+		$('body').animate({
 			scrollTop: $( $(this).attr('href') ).offset().top
 		}, 500);
 		return false;
@@ -389,5 +388,6 @@
 		</script>
 		<script src="js/imagesloaded.js"></script>
 		<script src="js/skrollr.js"></script>
-		<script src="js/parallax.js"></script>
+		<script src="js/loading.js"></script>
+
 		</html>
