@@ -402,7 +402,7 @@ margin: 20px auto;
 	font-size: 20px !important;
 	line-height: 24px !important;
 	text-transform: uppercase;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.5	px;
 	font-weight: 400;
 	display: inline-block;
 	border-radius: 3px;
@@ -800,7 +800,7 @@ margin: 20px auto;
 			padding: 15px 10px;
 		}
 
-		.casulo h1, .public h1 {
+		#slide-2 h1, #slide-3 h1 {
 			font-size: 35px;
 		}
 		.section2, .section3, .sectioncontato{
@@ -822,10 +822,10 @@ margin: 20px auto;
 		.port figure img {
 			min-width: 100%;
 		}
-		.public p {
+		#slide-3 p {
 			font-size: 13px;
 		}
-		.public h2{
+		#slide-3 h2{
 			text-align: center;
 		}
 		.mycont {
