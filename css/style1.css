@@ -105,14 +105,14 @@ header{
 }
 .menu a:hover{
 	color: #666;
+
 }
 .menuicon{
 	font-size: 20px !important;
 	line-height: 40px !important;
 }
-.mobimenu{
-	display:none;
-}
+
+
 
 /*IMAGEM TOP*/
 
@@ -752,18 +752,18 @@ margin: 20px auto;
 	}
 
 
-	.header .amenu
-	{
-		background: center center no-repeat transparent;
-		background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
-		background-color:red;
-		display: block;
-		width: 40px;
-		height: 40px;
-		position: absolute;
-		top: 0;
-		right: 10px;
-	}
+.header .amenu
+{
+	background: center center no-repeat transparent;
+	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
+	background-color:red;
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
 
 	/*----------------------- MOBILE VIEW -----------------------*/
 
@@ -796,25 +796,7 @@ margin: 20px auto;
 		header{
 			padding: 15px 10px;
 		}
-		#minilogo {
-			width:40% !important;
-			height: auto !important;
-			margin-top:5px !important;
-		}
-		.mobimenu{
-			display:block;
-			float: right;
-			width: 55%;
-			height:100%;
-			margin-top:10px;
-		}
-		.mobimenu li{
-			width:33.3%;
-			float:left;
-			text-align:center;
-			text-transform: uppercase;
-			font-size:80%;
-		}
+
 		#slide-2 .hsContent {
 			padding: 85px 10px !important;
 		}
