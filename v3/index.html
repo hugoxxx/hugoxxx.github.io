@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="www.hoogo.com.br" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<title>Hoogo Design</title>
+
+	<link type="text/css" rel="stylesheet" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/grid.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- MENU -->
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.dragopen.css" />
+	<!-- PORTFOLIO VIEW -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- MENU -->
+	<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.dragopen.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.fixedelements.min.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			var $menu = $('nav#menu'),
+			$html = $('html, body');
+
+			$menu.mmenu({
+				dragOpen: true
+			});
+
+			var $anchor = false;
+			$menu.find( 'li > a' ).on(
+				'click',
+				function( e )
+				{
+					$anchor = $(this);
+				}
+				);
+
+			var api = $menu.data( 'mmenu' );
+			api.bind( 'closed',
+				function()
+				{
+					if ( $anchor )
+					{
+						var href = $anchor.attr( 'href' );
+						$anchor = false;
+
+//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+if ( href.slice( 0, 1 ) == '#' )
+{
+	$html.animate({
+		scrollTop: $( href ).offset().top
+	});	
+}}});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="page">
+
+		<div class="header Fixed">
+			<a href="#menu"></a>
+			<img id="minilogo" src="images/minilogo.png" alt="Hoogo Design">
+		</div>
+
+		<div class="content" id="content">
+
+			<div id="intro" class="bgParallax" data-speed="15">
+				<article>
+					<div class="logo">
+						<img src="images/logo.png" alt="Hoogo Design">
+					</div>
+				</article>
+			</div>
+
+			<div class="tt1" id="conteudo"><a href="#conteudo"><i style="color:#333" class="fa fa-arrow-down"></i></a></div>
+
+			<div id="bloco1">
+				<div class="me">
+					<img src="images/me.jpg" alt="Hugo Rocha">
+				</div>
+				<div class="metext">
+					<h1>Seja bem vindo!</h1>
+					<p>Eu me chamo Hugo Rocha e esse é o meu portfólio de trabalho.</p>
+					<p>Com mais de 10 anos de experiencia no mercado, traduzindo diversos projetos e ideias para a realidade.</p>
+					<p>Entrelaçando o pensamento, a forma e o resultado! Sucesso do início ao fim!</p>
+					<ul class="social">
+						<li class=""><img src="images/social_be.png" alt=""></li>
+						<li class=""><img src="images/social_pi.png" alt=""></li>
+						<li class=""><img src="images/social_fb.png" alt=""></li>
+						<li class=""><img src="images/social_in.png" alt=""></li>
+						<li class=""><img src="images/social_sp.png" alt=""></li>
+						<li class=""><img src="images/social_sc.png" alt=""></li>
+						<li class=""><img src="images/social_yt.png" alt=""></li>
+						<li class=""><img src="images/social_lf.png" alt=""></li>
+					</ul>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+
+			<div id="bloco2" class="bgParallax" data-speed="15">
+				<div class="blococor">
+					<h1 data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-2 h2">Saia do casúlo!</h1>
+					<h2  data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-2 h2">Coloque suas ideias em prática e caminhe para o sucesso!</h2>
+				</div>
+			</div>
+
+			<div id="servicos" class="tt2"><i class="fa fa-bullhorn"></i></div>
+
+
+			<div id="bloco3">
+				<h1  class="subtitulo">Serviços</h1>
+				<h2 class="subsubtitulo">ALGUNS DOS SERVIÇOS OFERECIDOS!</h2>
+				<hr>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="images/serv1.png" alt="">
+						<h1>Website<br>Hotsite</h1>
+						<div style="clear:both"></div>
+						<p>Sites e hotsites personalizados com design exclusivo, modernos e direcionados ao seu target (público-alvo). Podendo conter sistema de gerenciamento de conteúdo.</p>
+					</div>
+					<div class="col-md-3">
+						<img src="images/serv2.png" alt="">
+						<h1>Identidade<br>Visual</h1>
+						<div style="clear:both"></div>
+						<p>Identidade visual é o conjunto de elementos formais que representa visualmente e de forma sistematizada, um nome, uma ideia, um produto, uma empresa, instituição ou serviço. Esse conjunto de elementos costuma ter como base uma logomarca integrada a um logotipo.</p>
+					</div>
+					<div class="col-md-3">
+						<img src="images/serv3.png" alt="">
+						<h1>E-Commerce<br>Loja  Virtual</h1>
+						<div style="clear:both"></div>
+						<p>O e-commerce, que em português significa comércio eletrônico, é uma modalidade de comércio que realiza suas transações financeiras por meio de dispositivos e plataformas eletrônicas, como computadores e celulares. Um exemplo deste tipo de comércio é comprar ou vender produtos em lojas virtuais.</p>
+					</div>
+					<div class="col-md-3">
+						<img src="images/serv6.png" alt="">
+						<h1>SEO<br>Analytics</h1>
+						<div style="clear:both"></div>
+						<p>SEO é um conjunto de técnicas que têm como principal objetivo tornar os sites mais amigáveis para os sites de busca, trabalhando palavras-chave selecionadas no conteúdo do site de forma que este fique melhor posicionado nos resultados orgânicos.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="images/serv4.png" alt="">
+						<h1>Blogs<br>Webzines</h1>
+						<div style="clear:both"></div>
+						<p>Blogs são diários on-line que você pode utilizar para compartilhar informações com uma organização em um estilo eficiente e dinâmico. Em uma configuração de negócios, os blogs são uma ótima ferramenta para o fornecimento de informações atualizadas com um toque pessoal.</p>
+					</div>
+					<div class="col-md-3">
+						<img src="images/serv5.png" alt="">
+						<h1>Email<br>Marketing</h1>
+						<div style="clear:both"></div>
+						<p>O email marketing é uma técnica de promoção de produtos ou serviços que se baseia na utilização do email como ferramenta de marketing direto, respeitando normas e procedimentos pré-definidos, analisando o retorno gerado através de relatórios e análises gráficas gerando campanhas cada vez mais otimizadas.</p>
+					</div>
+					<div class="col-md-3">
+						<img src="images/serv7.png" alt="">
+						<h1>Imagens<br>Publicitárias</h1>
+						<div style="clear:both"></div>
+						<p>Imagem pubicitária é a figura ou a representação que uma empresa usa visando chamar a atenção de possíveis compradores ou clientes. As empresas esperam que a imagem publicitária consiga desencadear diversos mecanismos (interesse pelos produtos, fidelização) que derivem num aumento das vendas.</p>
+					</div>
+					<div class="col-md-3">
+						<img src="images/serv8.png" alt="">
+						<h1>Folder<br>Flyer</h1>
+						<div style="clear:both"></div>
+						<p>Flyers são excelentes ferramentas de marketing e ótimas maneiras de caracterizar seu evento, produto ou serviço, principalmente em áreas de alto tráfego. Do inglês, significa 'algo que voa'.</p>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+
+			<div id="portfolio" class="tt3"><i class="fa fa-object-group"></i></div>
+
+			<div id="bloco4">
+				<h1 class="subtitulo">Portfólio</h1>
+				<h2 class="subsubtitulo">ÚLTIMOS TRABALHOS REALIZADOS E CLIENTES SATISFEITOS!</h2>
+				<hr>
+				<ul class="port cs-style-3 row">
+					<li class="col-md-3">
+						<figure>
+							<a href="ciara.html"><img src="images/portfolio/thumbs/ciara.jpg" alt="Ciara (não oficial)"></a>
+							<figcaption>
+								<h3>Site</h3>
+								<span>Ciara</span>
+								<a href="trendnotes.html">Abrir Projeto</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="col-md-3">
+						<figure>
+							<a href="infografico.html"><img src="images/portfolio/thumbs/infografico.jpg" alt="Infográfico Pessoal"></a>
+							<figcaption>
+								<h3>Imagem</h3>
+								<span>Infográfico Pessoal</span>
+								<a href="infografico.html">Abrir Projeto</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="col-md-3">
+						<figure>
+							<a href="cvegana.html"><img src="images/portfolio/thumbs/cvegana.jpg" alt="Coletiva Vegana"></a>
+							<figcaption>
+								<h3>Identidade Visual</h3>
+								<span>Coletiva Vegana</span>
+								<a href="cvegana.html">Abrir projeto</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="col-md-3">
+						<figure>
+							<a href="lmonsters.html"><img src="images/portfolio/thumbs/lmonsters.jpg" alt="Little Monsters"></a>
+							<figcaption>
+								<h3>Identidade Visual, Site, Embalagem e Papelaria</h3>
+								<span>Little Monsters</span>
+								<a href="lmonsters.html">Abrir projeto</a>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+				<ul class="port cs-style-3 row">
+					<li class="col-md-3">
+						<figure>
+							<a href="cinterno.html"><img src="images/portfolio/thumbs/cinterno.jpg" alt="Circuito Interno Fábrica da Bhering"></a>
+							<figcaption>
+								<h3>Folder e Facebook Cover</h3>
+								<span>Circuito Interno<br>Fabrica da Bhering</span>
+								<a href="cinterno.html">Abrir Projeto</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="col-md-3">
+						<figure>
+							<a href="nmoodle.html"><img src="images/portfolio/thumbs/nmoodle.jpg" alt="Novo Moodle Intituto Infnet"></a>
+							<figcaption>
+								<h3>Imagem Publicitária</h3>
+								<span>Novo Moodle<br>Instituto Infnet</span>
+								<a href="nmoodle.html">Abrir Projeto</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="col-md-3">
+						<figure>
+							<a href="grafo.html"><img src="images/portfolio/thumbs/grafo.jpg" alt="Grafo Design"></a>
+							<figcaption>
+								<h3>Identidade Visual e Site</h3>
+								<span>Grafo Design</span>
+								<a href="grafo.html">Abrir projeto</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="col-md-3">
+						<figure>
+							<a href="nucleus.html"><img src="images/portfolio/thumbs/nucleus.jpg" alt="Nucleus Terapia Quântica"></a>
+							<figcaption>
+								<h3>Identidade Visual e Site</h3>
+								<span>Nucleus<br>Terapia Quântica</span>
+								<a href="nucleus.html">Abrir projeto</a>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+				<ul class="port cs-style-3 row">
+					<li class="col-md-3">
+						<figure>
+							<a href="trendnotes.html"><img src="images/portfolio/thumbs/trendnotes.jpg" alt="TrendNotes"></a>
+							<figcaption>
+								<h3>Identidade Visual e Site/Blog</h3>
+								<span>TrendNotes</span>
+								<a href="trendnotes.html">Abrir Projeto</a>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+			<div id="bloco5"  class="bgParallax" data-speed="15">
+				<div class="blococor">
+					<h1 data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-3 h2">O amanhã chegou!</h1>
+					<h2  data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-3 h2">Há quinze anos atrás, as empresas competiam em preço. Hoje em qualidade. Amanhã será no design. <span data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-3 h2">Robert Hayes, professor Harvard Business School</span></h2>
+
+
+				</div>
+			</div>
+
+			<div id="contato" class="tt1"><i class="fa fa-paper-plane-o"></i></div>
+
+			<div id="bloco6">
+				<h1 class="subtitulo">Contato</h1>
+				<hr>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="mycont">
+							<p><i class="fa fa-phone"></i>+55 (21) 96943 - 9366</p>
+							<p><i class="fa fa-envelope"></i>hugogr@gmail.com</p>
+							<img src="images/envelope.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-6">
+
+						<span class="input input--yoshiko">
+							<input class="input__field input__field--yoshiko" type="text" id="input-10" />
+							<label class="input__label input__label--yoshiko" for="input-10">
+								<span class="input__label-content input__label-content--yoshiko" data-content="Nome">Nome</span>
+							</label>
+						</span>
+						<span class="input input--yoshiko">
+							<input class="input__field input__field--yoshiko" type="text" id="input-11" />
+							<label class="input__label input__label--yoshiko" for="input-11">
+								<span class="input__label-content input__label-content--yoshiko" data-content="Email">Email</span>
+							</label>
+						</span>
+						<span class="input input--yoshiko">
+							<input class="input__field input__field--yoshiko" type="text" id="input-12" />
+							<label class="input__label input__label--yoshiko" for="input-12">
+								<span class="input__label-content input__label-content--yoshiko" data-content="Site">Site</span>
+							</label>
+						</span>
+						<span class="input input--yoshiko">
+							<textarea class="input__field input__field--yoshiko conttext" type="text" id="input-13"></textarea>
+							<label class="input__label input__label--yoshiko" for="input-13">
+								<span class="input__label-content input__label-content--yoshiko" data-content="Mensagem">Mensagem</span>
+							</label>
+						</span>
+						<button>Enviar</button>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<nav id="menu">
+			<ul>
+				<li><a href="#content">Introduction</a></li>
+				<li><a href="#bloco1">First section</a></li>
+				<li><a href="#bloco3">Second section</a></li>
+				<li><a href="#bloco5">Third section</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+<script>
+	$('div.bgParallax').each(function(){
+		var $obj = $(this);
+
+		$(window).scroll(function() {
+			var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+
+			var bgpos = '50% '+ yPos + 'px';
+
+			$obj.css('background-position', bgpos);
+
+		}); 
+	});
+</script>
+<script>
+	$(function() {
+		$('.logo').css({
+			'position' : 'absolute',
+			'left' : '50%',
+			'top' : '50%',
+			'margin-left' : function() {return -$(this).outerWidth()/2},
+			'margin-top' : function() {return -$(this).outerHeight()/2-150}
+		});
+		$(window).resize();
+	});
+</script>
+<script>
+	$(document).ready(function() {
+		function setHeight() {
+			windowHeight = $(window).innerHeight();
+			$('#intro').css('min-height', windowHeight);
+		};
+		setHeight();
+
+		$(window).resize(function() {
+			setHeight();
+		});
+	});
+</script>
+<script>
+	$(document).scroll(function () {
+//Show element after user scrolls 800px
+var y = $(this).scrollTop();
+if (y < 450) {
+	$('.header').css({
+		'background-color' : 'rgba(255,255,255,0)',
+	});
+	$('#minilogo').css({
+		'display' : 'block',
+		'margin' : '-200px auto 0px',
+		'width' : 'auto',
+		'height' : '100%'
+	});
+} else {
+	$('.header').css({
+		'background-color' : 'rgba(255,255,255,1)',
+	});
+	$('#minilogo').css({
+		'display' : 'block',
+		'margin' : '0px auto 0px',
+		'width' : 'auto',
+		'height' : '100%'
+	});
+}
+});
+</script>
+<script>
+	$('.tt1 a').click(function(){
+		$('body').animate({
+			scrollTop: $( $(this).attr('href') ).offset().top
+		}, 500);
+		return false;
+	});
+</script>
+</html>
