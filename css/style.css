@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);
+
 html, body
 {
 	padding: 0;
@@ -14,13 +16,23 @@ body
 	-webkit-text-size-adjust: none;
 }
 #page{
-	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
 }
 nav:not(.mm-menu)
 {
 	display: none;
 }
-
+.smile{
+	font-family:Arial;
+	color:#666;
+	letter-spacing:2px;
+	font-weight:600;
+	    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    display: block;
+    margin: 10px 40px;
+    transform: rotate(90deg);
+}
 
 .header
 {
@@ -45,19 +57,19 @@ nav:not(.mm-menu)
 }
 .header a
 {
-	font-size:30px;
+	font-size: 30px;
 	display: block;
-	width: 75px;
-	height: 75px;
+	width: 27px;
+	height: 42px;
 	position: absolute;
 	top: 15px;
-	left: 15px;
+	left: 20px;
 }
 .header a i{
-	color:rgba(33,33,33,1);
+	color:rgba(55,55,55,1);
 }
 .header a i:hover{
-	color:rgba(5,178,246,.8);
+	color:rgba(222,222,222,1);
 }
 #minilogo{
 	display: none;
@@ -186,6 +198,8 @@ margin: 20px auto;
 /*BLOCO2*/
 #bloco2{
 	background-image: url(../images/casulo.gif);
+	background-size:cover;
+	background-position: center center;
 }
 .blococor{
 	background-color:rgba(5,178,246,.8);
@@ -376,6 +390,8 @@ margin: 20px auto;
 /*BLOCO5*/
 #bloco5{
 	background-image: url(../images/public.gif);
+	background-size:cover;
+	background-position: center center;
 }
 #bloco5 h1{
 	font-size: 40px;
@@ -685,6 +701,73 @@ margin: 20px auto;
 
 
 
+/* ----------------- PORTFOLIO PAGE ----------------- */
+.portview{
+	position: relative;
+	z-index:100;
+	background-color: #fff;
+	max-width: 90%;
+	margin: -125px auto 0;
+	padding: 0px;
+	text-align: center;
+	box-shadow: 0px -10px 20px rgba(0,0,0,0.2);
+}
+.portview img{
+	max-width: 100% !important;
+	height: auto;
+	margin:0px auto;
+}
+.maisport{
+	background-color: #fff;
+	max-width: 90%;
+	margin: 25px auto;
+	padding: 20px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+.maisport .row img{
+	max-width: 100%;
+	height: auto;
+}
+.ciarabt{
+	background-color: #fd0063;
+	border-radius: 50px;
+	margin:40px auto 80px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 30px;
+	width: 300px;
+	box-shadow: 0px 0px 0px transparent;
+	border: 0px;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+}
+.ciarabt:hover{
+	background-color: #333;
+	color: #fd0063;
+}
+.simbolo{
+	margin:75px auto;
+	display:block;
+	max-width:100px;
+}
+.projeto h2{
+	font-size:2em;
+	text-transform:uppercase;
+}
+.projeto h2 span{
+	padding: 10px;
+	border-radius:3px;
+}
+.projeto p{
+	margin-top: 40px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: .8em;
+	color: rgba(33,33,33,.3);
+}
+
+
+
 
 
 
@@ -743,5 +826,9 @@ margin: 20px auto;
 	}
 	.tt2 i, .tt3 i, #contato i {
 		padding-top: 20px;
+	}
+
+	.projeto h2 span{
+	display:block;
 	}
 }

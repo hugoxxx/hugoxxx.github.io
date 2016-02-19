@@ -82,7 +82,6 @@
 
 		<div class="header Fixed">
 			<a href="#menu"><i class="fa fa-bars"></i></a>
-			<img id="minilogo" src="images/minilogo.png" alt="Hoogo Design">
 		</div>
 
 		<div class="content" id="content">
@@ -118,7 +117,7 @@
 				<div style="clear:both"></div>
 			</div>
 
-			<div id="bloco2" class="bgParallax" data-speed="15">
+			<div id="bloco2">
 				<div class="blococor">
 					<h1 data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-2 h2">Saia do casúlo!</h1>
 					<h2  data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-2 h2">Coloque suas ideias em prática e caminhe para o sucesso!</h2>
@@ -301,7 +300,7 @@
 				</ul>
 				<div style="clear:both"></div>
 			</div>
-			<div id="bloco5"  class="bgParallax" data-speed="15">
+			<div id="bloco5">
 				<div class="blococor">
 					<h1 data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-3 h2">O amanhã chegou!</h1>
 					<h2  data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-3 h2">Há quinze anos atrás, as empresas competiam em preço. Hoje em qualidade. Amanhã será no design. <span>Robert Hayes, professor Harvard Business School</span></h2>
@@ -390,33 +389,7 @@
 		});
 	});
 </script>
-<script>
-	$(document).scroll(function () {
-	//Show element after user scrolls 800px
-	var y = $(this).scrollTop();
-	if (y < 450) {
-		$('.header').css({
-			'background-color' : 'rgba(255,255,255,0)',
-		});
-		$('#minilogo').css({
-			'display' : 'block',
-			'margin' : '-200px auto 0px',
-			'width' : 'auto',
-			'height' : '100%'
-		});
-	} else {
-		$('.header').css({
-			'background-color' : 'rgba(255,255,255,1)',
-		});
-		$('#minilogo').css({
-			'display' : 'block',
-			'margin' : '0px auto 0px',
-			'width' : 'auto',
-			'height' : '100%'
-		});
-	}
-	});
-</script>
+
 <script>
 	$('div.bgParallax').each(function(){
 		var $obj = $(this);
