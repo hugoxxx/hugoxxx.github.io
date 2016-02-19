@@ -30,9 +30,8 @@
 	<!-- LOADING -->
 	<script type="text/javascript" src="js/loading.js"></script>
 	<script>
-
 	//paste this code under head tag or in a seperate js file.
-	// Wait for window load
+	// Wait for window load //
 	$(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
@@ -54,7 +53,7 @@
 			{
 				$anchor = $(this);
 			}
-			);
+		);
 
 		var api = $menu.data( 'mmenu' );
 		api.bind( 'closed',
@@ -65,19 +64,20 @@
 					var href = $anchor.attr( 'href' );
 					$anchor = false;
 
-//	if the clicked link is linked to an anchor, scroll the page to that anchor 
-if ( href.slice( 0, 1 ) == '#' )
-{
-	$html.animate({
-		scrollTop: $( href ).offset().top
-	});	
-}}});
-	});
+		//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+		if ( href.slice( 0, 1 ) == '#' )
+		{
+			$html.animate({
+				scrollTop: $( href ).offset().top
+			});	
+		}}});
+			});
 </script>
 </head>
 
 <body>
-<div class="se-pre-con"></div>
+	<div class="se-pre-con"></div>
+	
 	<div id="page">
 
 		<div class="header Fixed">
@@ -304,9 +304,7 @@ if ( href.slice( 0, 1 ) == '#' )
 			<div id="bloco5"  class="bgParallax" data-speed="15">
 				<div class="blococor">
 					<h1 data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-3 h2">O amanhã chegou!</h1>
-					<h2  data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-3 h2">Há quinze anos atrás, as empresas competiam em preço. Hoje em qualidade. Amanhã será no design. <span data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-3 h2">Robert Hayes, professor Harvard Business School</span></h2>
-
-
+					<h2  data-center="opacity: 1" data--100-bottom="opacity: 0" data-206-top="opacity: 1" data-100-top="opacity: 0" data-anchor-target="#slide-3 h2">Há quinze anos atrás, as empresas competiam em preço. Hoje em qualidade. Amanhã será no design. <span>Robert Hayes, professor Harvard Business School</span></h2>
 				</div>
 			</div>
 
@@ -315,7 +313,6 @@ if ( href.slice( 0, 1 ) == '#' )
 			<div id="bloco6">
 				<h1 class="subtitulo">Contato</h1>
 				<hr>
-
 				<div class="row">
 					<div class="col-md-6">
 						<div class="mycont">
@@ -325,7 +322,6 @@ if ( href.slice( 0, 1 ) == '#' )
 						</div>
 					</div>
 					<div class="col-md-6">
-
 						<span class="input input--yoshiko">
 							<input class="input__field input__field--yoshiko" type="text" id="input-10" />
 							<label class="input__label input__label--yoshiko" for="input-10">
@@ -351,9 +347,7 @@ if ( href.slice( 0, 1 ) == '#' )
 							</label>
 						</span>
 						<button>Enviar</button>
-
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -366,19 +360,16 @@ if ( href.slice( 0, 1 ) == '#' )
 			</ul>
 			<p>:)</p>
 		</nav>
+
 	</div>
 </body>
 <script>
 	$('div.bgParallax').each(function(){
 		var $obj = $(this);
-
 		$(window).scroll(function() {
 			var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-
 			var bgpos = '50% '+ yPos + 'px';
-
 			$obj.css('background-position', bgpos);
-
 		}); 
 	});
 </script>
@@ -409,30 +400,30 @@ if ( href.slice( 0, 1 ) == '#' )
 </script>
 <script>
 	$(document).scroll(function () {
-//Show element after user scrolls 800px
-var y = $(this).scrollTop();
-if (y < 450) {
-	$('.header').css({
-		'background-color' : 'rgba(255,255,255,0)',
+	//Show element after user scrolls 800px
+	var y = $(this).scrollTop();
+	if (y < 450) {
+		$('.header').css({
+			'background-color' : 'rgba(255,255,255,0)',
+		});
+		$('#minilogo').css({
+			'display' : 'block',
+			'margin' : '-200px auto 0px',
+			'width' : 'auto',
+			'height' : '100%'
+		});
+	} else {
+		$('.header').css({
+			'background-color' : 'rgba(255,255,255,1)',
+		});
+		$('#minilogo').css({
+			'display' : 'block',
+			'margin' : '0px auto 0px',
+			'width' : 'auto',
+			'height' : '100%'
+		});
+	}
 	});
-	$('#minilogo').css({
-		'display' : 'block',
-		'margin' : '-200px auto 0px',
-		'width' : 'auto',
-		'height' : '100%'
-	});
-} else {
-	$('.header').css({
-		'background-color' : 'rgba(255,255,255,1)',
-	});
-	$('#minilogo').css({
-		'display' : 'block',
-		'margin' : '0px auto 0px',
-		'width' : 'auto',
-		'height' : '100%'
-	});
-}
-});
 </script>
 <script>
 	$('.tt1 a').click(function(){
