@@ -9,6 +9,7 @@ body{width:610px;}
 .info{font-size:.8em;color: #FF6600;letter-spacing:2px;padding-left:5px;}
 .btnAction{background-color:#2FC332;border:0;padding:10px 40px;color:#FFF;border:#F0F0F0 1px solid; border-radius:4px;}
 </style>
+
 <script src="js/jquery-2.1.1.js" type="text/javascript"></script>
 <script>
 function sendContact() {
