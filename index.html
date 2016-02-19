@@ -322,31 +322,33 @@
 						</div>
 					</div>
 					<div class="col-md-6">
+						<form action="mail_send.php" method="post">
 						<span class="input input--yoshiko">
-							<input class="input__field input__field--yoshiko" type="text" id="input-10" />
-							<label class="input__label input__label--yoshiko" for="input-10">
+							<input class="input__field input__field--yoshiko" type="text" id="input-10" required name="nome" />
+							<label class="input__label input__label--yoshiko" for="nome">
 								<span class="input__label-content input__label-content--yoshiko" data-content="Nome">Nome</span>
 							</label>
 						</span>
 						<span class="input input--yoshiko">
-							<input class="input__field input__field--yoshiko" type="text" id="input-11" />
-							<label class="input__label input__label--yoshiko" for="input-11">
+							<input class="input__field input__field--yoshiko" type="text" id="input-11" required name="email"/>
+							<label class="input__label input__label--yoshiko" for="email">
 								<span class="input__label-content input__label-content--yoshiko" data-content="Email">Email</span>
 							</label>
 						</span>
 						<span class="input input--yoshiko">
-							<input class="input__field input__field--yoshiko" type="text" id="input-12" />
-							<label class="input__label input__label--yoshiko" for="input-12">
+							<input class="input__field input__field--yoshiko" type="text" id="input-12" required name="site	" />
+							<label class="input__label input__label--yoshiko" for="site">
 								<span class="input__label-content input__label-content--yoshiko" data-content="Site">Site</span>
 							</label>
 						</span>
 						<span class="input input--yoshiko">
-							<textarea class="input__field input__field--yoshiko conttext" type="text" id="input-13"></textarea>
-							<label class="input__label input__label--yoshiko" for="input-13">
+							<textarea class="input__field input__field--yoshiko conttext" type="text" id="input-13" required name="mensagem"></textarea>
+							<label class="input__label input__label--yoshiko" for="mensagem">
 								<span class="input__label-content input__label-content--yoshiko" data-content="Mensagem">Mensagem</span>
 							</label>
 						</span>
-						<button>Enviar</button>
+						<button type="submit">Enviar</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -363,16 +365,6 @@
 
 	</div>
 </body>
-<script>
-	$('div.bgParallax').each(function(){
-		var $obj = $(this);
-		$(window).scroll(function() {
-			var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-			var bgpos = '50% '+ yPos + 'px';
-			$obj.css('background-position', bgpos);
-		}); 
-	});
-</script>
 <script>
 	$(function() {
 		$('.logo').css({
@@ -425,6 +417,17 @@
 	}
 	});
 </script>
+<script>
+	$('div.bgParallax').each(function(){
+		var $obj = $(this);
+		$(window).scroll(function() {
+			var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+			var bgpos = '50% '+ yPos + 'px';
+			$obj.css('background-position', bgpos);
+		}); 
+	});
+</script>
+
 <script>
 	$('.tt1 a').click(function(){
 		$('body').animate({
