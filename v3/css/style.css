@@ -120,12 +120,14 @@ p, h1, h2, h3, h4, a{
 .mm-listview>li i{
 	font-size:24px;
 	display: block;
-	margin: 20px auto 0px;
+	margin: 20px auto 15px;
 	text-align: center;
 	font-weight:200;
 }
 
-
+.mm-listview>li:hover i{
+	color:rgba(5,178,246,.8);
+}
 
 
 
@@ -236,10 +238,11 @@ margin: 20px auto;
 }
 #bloco3 img{
 	max-width: 48px;
+	margin-bottom:10px;
 	float: left;
 }
 #bloco3 hr{
-	border-top:1px solid #333;
+	border-top:1px solid #ccc;
 }
 
 
@@ -262,7 +265,7 @@ margin: 20px auto;
 	color: #666;
 }
 .port {
-	padding: 0px 20px 0px 20px;
+	padding: 0px 0px 0px 0px;
 	max-width: 100%;
 	margin: 0 auto;
 	list-style: none;
@@ -415,7 +418,7 @@ margin: 20px auto;
 #bloco6{
 	background-color: #fff;
 	padding:0px;
-	padding-top: 30px;
+	padding: 40px 100px;
 	margin:0px;	
 }
 #bloco6 i{
@@ -433,9 +436,8 @@ margin: 20px auto;
 .mycont p{
 	color: #333;
 	font-size: 150%;
-	text-align: center;
 	letter-spacing: 2px;
-	margin:30px 0px;
+	margin:0px 0px 30px;
 	font-weight: 300;
 }
 .mycont p i{
@@ -650,7 +652,7 @@ margin: 20px auto;
 	text-align: center;
 	display: block;
 	padding-top: 14px;
-	color:  rgba(32,32,32,.1);
+	color:  rgba(32,32,32,.2);
 	width: 100px;
 	margin: 0px auto;
 	font-size: 18px;
