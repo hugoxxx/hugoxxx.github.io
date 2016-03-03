@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="www.hoogo.com.br" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<title>Hoogo Design</title>
+
+	<link type="text/css" rel="stylesheet" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/grid.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/loading.css">
+
+	<!-- MENU -->
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.dragopen.css" />
+	<!-- PORTFOLIO VIEW -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- MENU -->
+	<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.dragopen.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.fixedelements.min.js"></script>
+
+	<!-- LOADING -->
+	<script type="text/javascript" src="js/loading.js"></script>
+	<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load //
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+<script type="text/javascript">
+	$(function() {
+		var $menu = $('nav#menu'),
+		$html = $('html, body');
+
+		$menu.mmenu({
+			dragOpen: true
+		});
+
+		var $anchor = false;
+		$menu.find( 'li > a' ).on(
+			'click',
+			function( e )
+			{
+				$anchor = $(this);
+			}
+			);
+
+		var api = $menu.data( 'mmenu' );
+		api.bind( 'closed',
+			function()
+			{
+				if ( $anchor )
+				{
+					var href = $anchor.attr( 'href' );
+					$anchor = false;
+
+		//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+		if ( href.slice( 0, 1 ) == '#' )
+		{
+			$html.animate({
+				scrollTop: $( href ).offset().top
+			});	
+		}}});
+	});
+</script>
+</head>
+
+<body>
+	<div class="se-pre-con"></div>
+	
+	<div id="page">
+
+		<div class="header Fixed">
+			<a href="#menu"><i class="fa fa-bars"></i></a>
+		</div>
+
+		<div class="content" id="content">
+
+			<div id="intro" class="bgParallax" data-speed="15">
+				<article>
+					<div  class="projeto">
+						<h2>Projeto <span style="background-color:#6bb9a7; color:#fff">Fernanda Bivar</span></h2>
+						<p>Cartão de Visitas.</p>
+					</div>
+				</article>
+			</div>
+			
+			
+
+		</div>
+
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html#page"><i class="fa fa-home"></i>HOME</a></li>
+				<li><a href="index.html#servicos"><i class="fa fa-bullhorn"></i>SERVIÇOS</a></li>
+				<li><a href="index.html#portfolio"><i class="fa fa-object-group"></i>PORTFÓLIO</a></li>
+				<li><a href="index.html#contato"><i class="fa fa-paper-plane-o"></i>CONTATO</a></li>
+			</ul>
+			<p class="smile">:)</p>
+		</nav>
+
+	</div>
+	<div class="portview">
+		<img src="images/portfolio/fbivar/img1.jpg" alt="Fernanda Bivar">
+		<img src="images/portfolio/fbivar/img2.jpg" alt="Fernanda Bivar">
+	</div>		  
+	<img class="simbolo" src="images/simbolo.png" alt="Hoogo Design">
+</body>
+<script>
+	$(function() {
+		$('.projeto').css({
+			'position' : 'absolute',
+			'left' : '50%',
+			'right' : '50%',
+			'top' : '50%',
+			'display' : 'block',
+			'text-aling' : 'center',
+			'width' : '80%',
+			'margin-left' : function() {return -$(this).outerWidth()/2},
+			'margin-top' : function() {return -$(this).outerHeight()/2-100}
+		});
+		$(window).resize();
+	});
+</script>
+<script>
+	$(document).ready(function() {
+		function setHeight() {
+			windowHeight = $(window).innerHeight();
+			$('#intro').css('min-height', windowHeight);
+		};
+		setHeight();
+
+		$(window).resize(function() {
+			setHeight();
+		});
+	});
+</script>
+<script>
+	$(document).scroll(function () {
+	//Show element after user scrolls 800px
+	var y = $(this).scrollTop();
+	if (y < 450) {
+		$('#minilogo').css({
+			'display' : 'block',
+			'margin' : '-200px 20px 0px',
+			'width' : 'auto',
+			'height' : '100%'
+		});
+	} else {
+		$('#minilogo').css({
+			'display' : 'block',
+			'margin' : '0px 20px 0px',
+			'width' : 'auto',
+			'height' : '100%'
+		});
+	}
+});
+</script>
+<script>
+	$('div.bgParallax').each(function(){
+		var $obj = $(this);
+		$(window).scroll(function() {
+			var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+			var bgpos = '50% '+ yPos + 'px';
+			$obj.css('background-position', bgpos);
+		}); 
+	});
+</script>
+
+<script>
+	$('.tt1 a').click(function(){
+		$('body').animate({
+			scrollTop: $( $(this).attr('href') ).offset().top
+		}, 500);
+		return false;
+	});
+</script>
+</html>
