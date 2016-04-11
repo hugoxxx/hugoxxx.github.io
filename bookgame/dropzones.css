@@ -1,0 +1,114 @@
+body { font-family: Helvetica, Arial, sans-serif; }
+
+.dropzone-wrapper {
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    top: 0;
+    width: 600px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+
+.dropzone {
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    color: #666;
+    text-align: center;
+    line-height: 4em;
+    transition: background .15s linear, border-color .15s linear;
+}
+
+.dropzone.-drop-possible { border-color: #666; }
+
+.dropzone.-drop-over {
+    background: #666;
+    color: #fff;
+}
+
+.draggable {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    width: 200px;
+    margin-top: 250px;
+    color: #fff;
+    text-align: center;
+
+    -ms-touch-action: none;
+        touch-action: none;
+}
+
+.draggable.-drop-possible {}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.qd1{
+    background-image: url("images/qd1_b.jpg");
+}
+.qd2{
+    background-image: url("images/qd2_b.jpg");
+}
+.qd3{
+    background-image: url("images/qd3_b.jpg");
+}
+.qd4{
+    background-image: url("images/qd4_b.jpg");
+}
+.qd5{
+    background-image: url("images/qd5_b.jpg");
+}
+.qd6{
+    background-image: url("images/qd6_b.jpg");
+}
+.qd7{
+    background-image: url("images/qd7_b.jpg");
+}
+.qd8{
+    background-image: url("images/qd8_b.jpg");
+}
+.qd9{
+    background-image: url("images/qd9_b.jpg");
+}
+.titulo{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+.titulo h1{
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    font-weight: 100;
+    border-left: 7px solid red;
+    padding-left: 10px;
+}
+.instrucoes{
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    width: 400px;
+    max-width: 50%;
+    padding: 0px 10px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    border-bottom: 3px solid rgba(0,0,0,.1);
+}
+.instrucoes h1{
+    text-transform: uppercase;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.instrucoes p{
+    font-size: .9em;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+}
